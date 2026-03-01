@@ -1,0 +1,10 @@
+:root {
+  --font-family: "IBMPlexMono", sans-serif;
+
+  /* colors */
+
+  --color-main: #1bff07;
+  --color-secondary: #191c19;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}

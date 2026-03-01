@@ -1,0 +1,22 @@
+/* base  */
+
+@import url(base/reset.css);
+@import url(base/fonts.css);
+@import url(base/variables.css);
+@import url(base/base.css);
+
+/* layout */
+
+@import url(layout/container.css);
+
+/* components */
+
+@import url(components/btn.css);
+@import url(components/burger.css);
+@import url(components/header.css);
+@import url(components/menu.css);
+@import url(components/projects.css);
+@import url(components/skills.css);
+@import url(components/services.css);
+@import url(components/contacts.css);
+@import url(components/footer.css);

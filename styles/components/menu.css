@@ -1,0 +1,14 @@
+.menu__list {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.menu__link {
+  transition: all 0.3s;
+}
+
+.menu__link:hover {
+  color: var(--color-main);
+}

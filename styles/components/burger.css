@@ -1,0 +1,56 @@
+.burger {
+  --burger-width: 30px;
+  --burger-height: 20px;
+  --line-height: 2px;
+  display: none;
+  position: relative;
+  width: var(--burger-width);
+  height: var(--burger-height);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110;
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: var(--line-height);
+  background-color: var(--color-main);
+  border-radius: 2px;
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.2s ease;
+}
+
+.burger__line:nth-child(1) {
+  top: 0;
+}
+
+.burger__line:nth-child(2) {
+  top: calc(50% - var(--line-height) / 2);
+}
+
+.burger__line:nth-child(3) {
+  bottom: 0;
+}
+
+/* Активное состояние бургера (крестик) */
+.burger.active .burger__line:nth-child(1) {
+  top: calc(50% - var(--line-height) / 2);
+  transform: rotate(45deg);
+}
+
+.burger.active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .burger__line:nth-child(3) {
+  bottom: calc(50% - var(--line-height) / 2);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 670px) {
+  .burger {
+    display: block;
+  }
+}

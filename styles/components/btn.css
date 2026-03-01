@@ -1,0 +1,13 @@
+.btn {
+  display: inline-flex;
+  padding: 56px 85px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: var(--color-main);
+  color: var(--color-black);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
