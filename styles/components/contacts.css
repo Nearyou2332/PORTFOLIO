@@ -1,4 +1,7 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   min-height: 717px;
   margin-bottom: 150px;
   background-color: var(--color-secondary);
@@ -6,13 +9,13 @@
     "../../resources/images/contacts/contacts-bg.png" 1x,
     "../../resources/images/contacts/contacts-bg@2x.png" 2x
   );
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right bottom;
 }
 
 .contacts__content {
   padding-block: 90px;
-  padding-top: 320px;
 }
 
 .contacts__title {
